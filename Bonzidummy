@@ -1,0 +1,64 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("bonzidummy script break in 2 v1", "DarkTheme")
+local Tab = Window:NewTab("Tab1/main")
+local Section = Tab:NewSection("tip: the free hackers iphone doesn't work")
+Section:NewButton("FreeHacker.lua", "ButtonInfo", function()
+local args = {
+    [1] = "Phone",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("freenerd.lua", "ButtonInfo", function()
+local args = {
+    [1] = "Book",
+    [2] = true,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+local Tab = Window:NewTab("Ingame")
+local Section = Tab:NewSection("step right on in the mystery shack")
+Section:NewButton("golden Apple", "ButtonInfo", function()
+local args = {
+    [1] = "GoldenApple"
+}
+
+game:GetService("ReplicatedStorage").Events.GiveTool:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("gold pizza", "ButtonInfo", function()
+local args = {
+    [1] = "GoldPizza"
+}
+
+game:GetService("ReplicatedStorage").Events.GiveTool:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("spam 1+ speed for inf strength", "ButtonInfo", function()
+local args = {
+    [1] = "Strength"
+}
+
+game:GetService("ReplicatedStorage").Events.RainbowWhatStat:FireServer(unpack(args))
+
+    print("Clicked")
+end)
+Section:NewButton("1+ strength", "ButtonInfo", function()
+local args = {
+    [1] = "Strength"
+}
+
+game:GetService("ReplicatedStorage").Events.RainbowWhatStat:FireServer(unpack(args))
+
+    print("Clicked")
+end)
