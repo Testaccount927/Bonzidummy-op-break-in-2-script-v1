@@ -32,6 +32,11 @@ local args = {
 }
 
 game:GetService("ReplicatedStorage").Events.GiveTool:FireServer(unpack(args))
+local args = {
+    [1] = "Speed"
+}
+
+game:GetService("ReplicatedStorage").Events.RainbowWhatStat:FireServer(unpack(args))
 
     print("Clicked")
 end)
@@ -44,13 +49,7 @@ game:GetService("ReplicatedStorage").Events.GiveTool:FireServer(unpack(args))
 
     print("Clicked")
 end)
-Section:NewButton("spam 1+ speed for inf strength", "ButtonInfo", function()
-local args = {
-    [1] = "Strength"
-}
-
-game:GetService("ReplicatedStorage").Events.RainbowWhatStat:FireServer(unpack(args))
-
+Section:NewButton("spam 1+ speed for 5 speed", "ButtonInfo", function()
     print("Clicked")
 end)
 Section:NewButton("1+ strength", "ButtonInfo", function()
