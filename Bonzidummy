@@ -83,6 +83,16 @@ local args = {
 game:GetService("ReplicatedStorage").Events.Vending:FireServer(unpack(args))
     print("Clicked")
 end)
+Section:NewButton("inf normal apples.", "get inf apples", function()
+while wait() do
+local args = {
+    [1] = "Apple"
+}
+
+game:GetService("ReplicatedStorage").Events.GiveTool:FireServer(unpack(args))
+end
+    print("Clicked")
+end)
 local Section = Tab:NewSection("tools")
 Section:NewButton("Bat", "ButtonInfo", function()
 local player = game.Players.LocalPlayer -- Gets the player who executed the script
@@ -147,3 +157,4 @@ local args = {
 game:GetService("ReplicatedStorage").Events.Vending:FireServer(unpack(args))
     print("Clicked")
 end)
+
