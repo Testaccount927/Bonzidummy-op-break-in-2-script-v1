@@ -61,4 +61,12 @@ local args = {
 game:GetService("ReplicatedStorage").Events.RainbowWhatStat:FireServer(unpack(args))
 
     print("Clicked")
+end)Section:NewButton("give 1 rainbow pizza", "ButtonInfo", function()
+local args = {
+    [1] = "RainbowPizza"
+}
+
+game:GetService("ReplicatedStorage").Events.GiveTool:FireServer(unpack(args))
+
+    print("Clicked")
 end)
